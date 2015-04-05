@@ -1,0 +1,4 @@
+/* style.css --- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+aside:not(.right-off-canvas-menu) {background: none repeat scroll 0 0 #eee; margin-top: 20px; min-height: 600px; padding-top: 20px; margin-bottom: 20px; }
+footer {background: none repeat scroll 0 0 #222; color: #ddd; min-height: 200px; padding-top: 20px; }

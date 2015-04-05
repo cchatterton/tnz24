@@ -1,0 +1,17 @@
+/* default.css - ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+body, * {font-family: 'Raleway', sans-serif;}
+body {position: static !important;} /* to fix WP admin bar issue on small screens */
+h1, h2, h3, h4, h5, h6 {margin-top:0px;)}
+.wp-caption {color:#222;}
+.wp-caption-text {color: #222;}
+.sticky {color: #222;}
+.gallery-caption {color: #222;}
+.bypostauthor {color: #222;}
+.alignright {text-align: right;}
+.alignleft {text-align: left;}
+.aligncenter {text-align: center;}
+#wpadminbar #wp-admin-bar-root-default .development a {background: none repeat scroll 0 0 red;}
+#wpadminbar #wp-admin-bar-root-default .staging a  {background: darkorange;}
+#wpadminbar #wp-admin-bar-root-default .production a {background: none repeat scroll 0 0 green;}
+#row-content aside {background: none repeat scroll 0 0 #eee; margin: 1rem 0; min-height: 600px;}

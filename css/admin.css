@@ -1,0 +1,3 @@
+#wpadminbar #wp-admin-bar-root-default .development a {background: none repeat scroll 0 0 red;}
+#wpadminbar #wp-admin-bar-root-default .staging a  {background: darkorange;}
+#wpadminbar #wp-admin-bar-root-default .production a {background: none repeat scroll 0 0 green;}
