@@ -1,17 +1,23 @@
 /* default.css - ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
-
-body, * {font-family: 'Raleway', sans-serif;}
-body {position: static !important;} /* to fix WP admin bar issue on small screens */
-h1, h2, h3, h4, h5, h6 {margin-top:0px;)}
-.wp-caption {color:#222;}
-.wp-caption-text {color: #222;}
-.sticky {color: #222;}
-.gallery-caption {color: #222;}
-.bypostauthor {color: #222;}
-.alignright {text-align: right;}
-.alignleft {text-align: left;}
-.aligncenter {text-align: center;}
-#wpadminbar #wp-admin-bar-root-default .development a {background: none repeat scroll 0 0 red;}
-#wpadminbar #wp-admin-bar-root-default .staging a  {background: darkorange;}
-#wpadminbar #wp-admin-bar-root-default .production a {background: none repeat scroll 0 0 green;}
-#row-content aside {background: none repeat scroll 0 0 #eee; margin: 1rem 0; min-height: 600px;}
+body, * {font-family: 'Raleway', sans-serif;} body {position: static !important;} h1, h2, h3, h4, h5, h6 {margin-top:0px;)}
+.wp-caption {color:#222;} .wp-caption-text {color: #222;} .sticky {color: #222;} .gallery-caption {color: #222;} .bypostauthor {color: #222;} .alignright {text-align: right;} .alignleft {text-align: left;} .aligncenter {text-align: center;}
+.s-everything .main-section > .row-wrapper {padding: 1rem 0;}
+#row-content aside {background: none repeat scroll 0 0 #eee; min-height: 600px; padding-top: 0.5rem;}
+#wtaiu-data .label {background: none repeat scroll 0 0 #556;}
+#wtaiu-data .panel .panel-header {border: 0 none; text-shadow: 0 0 0 rgba(0, 0, 0, 0);}
+#wtaiu-data .panel {background: none repeat scroll 0 0 #f2f2f2; border-style: none; border-width: 0; color: #222222!important;}
+#wtaiu .info-list dd, #wtaiu .info-list dt, #wtaiu-data .panel p , #wtaiu-data .info-table th, #wtaiu-data .info-table td, #php-info-panel table td, #php-info-panel table th {font-family: arial; font-size: 0.75rem; font-weight: 400 !important;}
+#paupanels-frame {display: none;}
+#row-top img {margin: 0.75rem 0;}
+#row-inner-top > ul {float: right; list-style: outside none none; margin: -1px 0 0;}
+#row-top ul > li {background: none repeat scroll 0 0 #eee; border-bottom: 2px solid #bbb; display: inline; margin-right: 1px; padding: 0.125rem 0.5rem;}
+.button {border-bottom: 0.325rem solid #2285a2; padding: 0.5rem 1.25rem;}
+#row-top .button {bottom: 0; font-size: 1.5rem; margin-bottom: 1rem; position: absolute; right: 0;}
+.row-inner-wrapper {position: relative;}
+#row-top {background: none repeat scroll 0 0 #ddd;}
+#row-inner-top > a {display: inline-block;}
+.tab-bar a > #logo {margin-bottom: 0.125rem; margin-left: 3.5rem;}
+.tab-bar .cta {border-bottom: 0 none; margin-right: 0.325rem;}
+@media only screen and (max-width: 40em) { /* <-- max-width 640px */
+	aside.small-24 {margin: 0 3%; max-width: 94%;}
+}

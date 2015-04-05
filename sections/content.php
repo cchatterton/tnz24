@@ -1,19 +1,13 @@
 <?php
 
-global $post;
-//$content = apply_filters('the_content', $post->post_content );
-
-echo '<article class="small-12 medium-9 large-9 columns">'."\n";
-
-	_e( '<h1>'.strtoupper( $post->post_title ).'</h1>'."\n" );
-	// the content
-	while ( have_posts() ) : the_post();
-	the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', ns_ ) );
-	endwhile;
-
-echo '</article>'."\n";
-echo '<aside class="small-12 medium-3 large-3 columns">'."\n";
+echo '<article class="small-24 medium-13 large-17 columns">'."\n";
+echo '	<h1>'.strtoupper( get_the_title()).'</h1>'."\n";
+while ( have_posts() ) : the_post();
+the_content();
+endwhile;
+echo '	</article>'."\n";
+echo '	<aside class="small-24 medium-9 large-7 columns">'."\n";
 get_sidebar();
-echo '</aside>'."\n"; 
+echo '	</aside>'."\n";
 
 ?>
