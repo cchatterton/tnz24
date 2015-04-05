@@ -2,7 +2,7 @@
 
 define('ns_', 'tn_');
 
-$includes = array(
+$theme_files = array(
 
 	// theme elements
 	array( 'file' => 'scripts.php',         'dir' => 'theme' ), // <-- enques our scripts to header
@@ -10,15 +10,13 @@ $includes = array(
 	array( 'file' => 'fonts.php',           'dir' => 'theme' ), // <-- lets us link up to three google fonts
 	array( 'file' => 'functions.php',       'dir' => 'theme' ), // <-- our theme functions
 	array( 'file' => 'customizer.php',      'dir' => 'theme' ), // <-- our customizer fields & settings
-	array( 'file' => 'style.php', 					     'dir' => 'css' ), // <-- our dynamic css
-	array( 'file' => 'sections.php',        'dir' => 'sections' ), // <-- set-up sections
 
 	);
 
-foreach ($includes as $args ) tn_init::include( $args );
+foreach ($theme_files as $theme_file ) tn_init::include_file( $theme_file );
 
 class tn_init {
-	static function include( $args ) {
+	static function include_file( $args ) {
 		is_array( $args ) ? extract( $args ) : parse_str( $args );
 		// check for required variables
 		if( !$dir && !$file ) return;

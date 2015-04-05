@@ -1,4 +1,4 @@
-<?php tn_section( 'name=footer&file=footer.php&inner_class=row&type=footer' ); ?>
+<?php tn_theme::section( 'name=footer&file=footer.php&inner_class=row&type=footer' ); ?>
 					<!-- content goes here -->
 					</section>
 				<a class="exit-off-canvas"></a>
@@ -19,6 +19,9 @@
 	};
 	try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
 	catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+<script>
+	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 </script>
 	</body>
 </html>

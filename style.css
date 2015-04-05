@@ -1,17 +1,45 @@
 /*
 
-Theme Name: TNz24
+Theme Name: TNz5.3
 Theme URI: http://techn.com.au
 Author: TECHN
 Author URI: http://techn.com.au
 Description: WordPress theme boilerplate based on ZURB Foundation 5
-Version: 0.1
+Version: 2.01
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Release Notes
 =============
-0.1
-Based on TNZ5 with performance updates 24 column grid + some other stuff :)
+3.
+Updated architecture
+move to classes
+deeper integration with:
+* gravity forms
+* CMB2
+*
+
+2.01
+* added zurb 24 grid options
+* added site status indicator
+
+2.0 (beta 0.1)
+* 2015
+* tba
+
+1.031
+* added shortcodes to theme_part.php
+
+1.03
+* removed php libaries
+* extended fx_theme_row with fx_theme_section and fx_theme_part
+* removed toprow and herorow as theme parts
+* added front-page.php and added text to index.php and front-page.php to show that theme has installed correctly.
+
+1.02
+* Added Zurb font icons.
+
+1.01
+* Added google fonts hooks to header
 
 */
